@@ -26,15 +26,14 @@ unset rc
 
 
 # Couleurs
-BLEU_FLUO='\[\e[1;96m\]'    # Bleu clair fluo
-MAGENTA_FLUO='\[\e[1;35m\]'  # Violet fluo
-ROSE_PALE='\[\e[1;38;5;213m\]' # Rose pâle
-RESET='\[\e[0m\]'            # Réinitialiser la couleur
+BLEU_FLUO='\[\e[1;96m\]'    
+MAGENTA_FLUO='\[\e[1;35m\]'  
+ROSE_PALE='\[\e[1;38;5;213m\]' 
+RESET='\[\e[0m\]'           
 
-# Prompt personnalisé avec flèche et répertoire courant en rose pâle
 PS1="${BLEU_FLUO}\u${RESET}@${MAGENTA_FLUO}\h${RESET} ${RESET}💖💾 ${ROSE_PALE}\w${RESET}> "
 
-# Personnalisation des couleurs de ls (uniquement dossiers et liens symboliques)
+# ls custom (uniquement dossiers et liens symboliques)
 
 alias ls='ls --color=auto'
 export LS_COLORS="di=38;5;226"
